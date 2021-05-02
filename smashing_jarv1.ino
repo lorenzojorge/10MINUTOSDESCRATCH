@@ -64,7 +64,6 @@ void loop() {
   // Le decimos que haga la lectura del valor de la temperatura
   temp = analogRead(A0);
   tempC= (temp * 0.48828125)-50;
-  tempDisplay= (tempC - 500)/10;
   // print the number of seconds since reset:
   
   lcd.print(tempC);
